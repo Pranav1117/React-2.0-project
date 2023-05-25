@@ -1,0 +1,49 @@
+.article-above-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.article-heading{
+    font-size: 50px;
+color: rgb(122, 38, 38);
+text-align: center;
+}
+
+.article-main-image{
+    display: flex;
+    margin: 20px;
+    align-self: center;
+    width: 30px;
+}
+
+.article-main-para{
+    font-size:20px;
+    color: rgba(140, 24, 24, 0.568);
+}
+
+.more{
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+
+}
+.article-lower-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 40px;
+    text-align: center;
+}
+.article-bottom-name{
+    text-decoration: none;
+    font-size: 25px;
+    color: brown;
+}
+.article-bottom-date{
+    font-size: 17px;
+}

@@ -1,0 +1,128 @@
+
+.homepage-advertise-container{
+    border: 2px solid black;
+    width: 450px;
+    height: 700px;
+    position: absolute;
+    top: 1536px;
+    left: 925px;
+}
+.homepage-main-images{
+    position: relative;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.home-page-headings-underline{
+    margin-left: 50px;
+    border-bottom: 4px solid rgb(172, 97, 97) ;
+    
+    
+    
+}
+.home-page-headings{
+    margin: 30px;
+}
+hr{
+    width: 90%;
+    margin-left: 5%;
+}
+.homepage-main-big-image{
+    width: 750px;
+    height: 580px;
+    align-self: center;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+.homepage-small-images1{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    border-radius: 10px;
+
+}
+
+.homepage-small-images2{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    bottom: 20px;
+    right: 130px;
+    border-radius: 10px;
+
+}
+
+.homepage-bollystories-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 25px;
+    margin-bottom: 80px;
+}
+.homepage-hollystories-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    margin: 15px;
+    width: 40%;
+    margin-left: 10%;
+
+}
+.homepage-hollystories-wrapper{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.home-hollywood-stories-img img{
+border-radius: 5px;
+}
+.home-hollywood-stories-img{
+margin: 20px;
+}
+
+.homepage-toppost-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    position: relative;
+    top: -350px;
+    left: 410px;
+    margin-left: 400px;
+}
+
+.homepage-toppost-smallpost-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: -100px;
+width: 750px;
+    margin-top: 40px;
+    text-align: start;
+    padding: 10px;
+}
+
+.homepage-toppost-smallpost{
+display: flex;
+flex-direction: row;
+align-items: start;
+margin: 20px;
+margin-top: 10px;
+
+
+
+
+}
+
+.homepage-toppost-smallpost-info{
+    padding: 10px;
+    width: 60%;
+
+}
+.txt-adjust{
+    width: 50%;
+}

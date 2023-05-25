@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Home from "./Pages/Home";
+import Bollywood from "./Pages/Bollywood";
+import Fitness from "./Pages/Fitness";
+import Gaming from "./Pages/Gaming";
+import Technology from "./Pages/Technology";
+import Hollywood from "./Pages/Hollywood";
+import Store from "./Utilities/ContextApi/ContextData";
+import RouteCompo from "../../project/src/Utilities/Routes/RouteCompo";
+import "./global.css";
+import HeaderCompo from "./Components/HeaderCompo";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Store>
+        <RouteCompo>
+          <Home />
+          <Bollywood />
+          <Hollywood />
+          <Technology />
+          <Fitness />
+          <Gaming />
+        </RouteCompo>
+      </Store>
     </div>
   );
 }
