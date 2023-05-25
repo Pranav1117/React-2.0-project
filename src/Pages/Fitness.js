@@ -23,6 +23,7 @@ function Fitness() {
                     <div className="left-section-avatar">
                       <Link to={`/article/${i.id}`}>
                         <img
+                          alt="image"
                           src={i.image}
                           style={{ width: 250, height: 200, borderRadius: 10 }}
                         ></img>
@@ -49,6 +50,7 @@ function Fitness() {
                   <div className="right-section-avatar">
                     <Link to={`/article/${i.id}`}>
                       <img
+                        alt="image"
                         src={i.image}
                         style={{
                           width: 200,

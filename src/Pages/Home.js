@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../Components/NavBar/NavBar";
 import HeaderCompo from "../Components/HeaderCompo";
 import { data } from "../Utilities/ContextApi/ContextData";
 import { useContext } from "react";
@@ -19,7 +18,11 @@ function Home() {
             .map((i, index) => {
               return (
                 <>
-                  <img className="homepage-main-big-image" src={i.image} />
+                  <img
+                    alt="image"
+                    className="homepage-main-big-image"
+                    src={i.image}
+                  />
                 </>
               );
             })}
@@ -33,7 +36,11 @@ function Home() {
             .map((i, index) => {
               return (
                 <>
-                  <img src={i.image} className="homepage-small-images1" />
+                  <img
+                    alt="image"
+                    src={i.image}
+                    className="homepage-small-images1"
+                  />
                 </>
               );
             })}
@@ -43,7 +50,11 @@ function Home() {
             .map((i, index) => {
               return (
                 <>
-                  <img src={i.image} className="homepage-small-images2" />
+                  <img
+                    alt="image"
+                    src={i.image}
+                    className="homepage-small-images2"
+                  />
                 </>
               );
             })}
@@ -62,7 +73,7 @@ function Home() {
             return (
               <div key={index} className="homepage-bollystories">
                 <Link to={`article/${item.id}`}>
-                  <img src={item.image} style={{ width: 200 }} />
+                  <img alt="image" src={item.image} style={{ width: 200 }} />
                 </Link>
                 <h2>{item.name}</h2>
                 <p>{item.IMDb}</p>
@@ -86,7 +97,11 @@ function Home() {
               <div key={index} className="homepage-hollystories-wrapper">
                 <div className="home-hollywood-stories-img">
                   <Link to={`article/${item.id}`}>
-                    <img src={item.image} style={{ width: 200, height: 250 }} />
+                    <img
+                      alt="image"
+                      src={item.image}
+                      style={{ width: 200, height: 250 }}
+                    />
                   </Link>
                 </div>
                 <div className="home-hollywood-stories-desc">
@@ -106,7 +121,11 @@ function Home() {
             return (
               <div className="homepage-toppost-mainpost">
                 <Link to={`article/${item.id}`}>
-                  <img src={item.image} style={{ width: 450, height: 266 }} />
+                  <img
+                    alt="image"
+                    src={item.image}
+                    style={{ width: 450, height: 266 }}
+                  />
                 </Link>
                 <div className="txt-adjust">
                   <h2>{item.name}</h2>
@@ -123,7 +142,11 @@ function Home() {
               return (
                 <div className="homepage-toppost-smallpost">
                   <Link to={`article/${item.id}`}>
-                    <img src={item.image} style={{ width: 101, height: 104 }} />
+                    <img
+                      alt="image"
+                      src={item.image}
+                      style={{ width: 101, height: 104 }}
+                    />
                   </Link>
                   <div className="homepage-toppost-smallpost-info">
                     <h2>{item.name}</h2>

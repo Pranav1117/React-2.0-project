@@ -7,7 +7,6 @@ import Hollywood from "./Pages/Hollywood";
 import Store from "./Utilities/ContextApi/ContextData";
 import RouteCompo from "../src/Utilities/Routes/RouteCompo";
 import "./global.css";
-import HeaderCompo from "./Components/HeaderCompo";
 function App() {
   return (
     <div className="App">
