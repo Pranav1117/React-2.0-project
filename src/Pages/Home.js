@@ -3,6 +3,7 @@ import HeaderCompo from "../Components/HeaderCompo";
 import { data } from "../Utilities/ContextApi/ContextData";
 import { useContext } from "react";
 import "./home.css";
+import "../global.css";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -19,7 +20,7 @@ function Home() {
               return (
                 <>
                   <img
-                    alt="image"
+                    alt="logo"
                     className="homepage-main-big-image"
                     src={i.image}
                   />
@@ -37,27 +38,28 @@ function Home() {
               return (
                 <>
                   <img
-                    alt="image"
+                    alt="logo"
                     src={i.image}
                     className="homepage-small-images1"
                   />
                 </>
               );
             })}
-
-          {detail
-            .filter((item) => item.name === "Artificial Inteligence")
-            .map((i, index) => {
-              return (
-                <>
-                  <img
-                    alt="image"
-                    src={i.image}
-                    className="homepage-small-images2"
-                  />
-                </>
-              );
-            })}
+          <div>
+            {detail
+              .filter((item) => item.name === "Artificial Inteligence")
+              .map((i, index) => {
+                return (
+                  <>
+                    <img
+                      alt="logo"
+                      src={i.image}
+                      className="homepage-small-images2"
+                    />
+                  </>
+                );
+              })}
+          </div>
         </div>
       </div>
 
@@ -65,19 +67,23 @@ function Home() {
         <span className="home-page-headings-underline"> Latest</span> Bollywood
         Stories
       </h2>
-      <hr />
+      <hr style={{ width: "90%" }} />
       <div className="homepage-bollystories-container">
         {detail
           .filter((i) => i.category === "Bollywood")
           .map((item, index) => {
             return (
               <div key={index} className="homepage-bollystories">
-                <Link to={`article/${item.id}`}>
-                  <img alt="image" src={item.image} style={{ width: 200 }} />
+                <Link className="none-underline" to={`article/${item.id}`}>
+                  <img
+                    className="home-page-bolly-images"
+                    alt="logo"
+                    src={item.image}
+                  />
+                  <h2 className="bolly-movie-headings">{item.name}</h2>
+                  <p className="topics-info">{item.IMDb}</p>
+                  <p className="homepage-bolly-desc topics-desc">{item.desc}</p>
                 </Link>
-                <h2>{item.name}</h2>
-                <p>{item.IMDb}</p>
-                <p>{item.desc}</p>
               </div>
             );
           })}
@@ -87,7 +93,7 @@ function Home() {
         <span className="home-page-headings-underline"> Latest</span> Hollywood
         Stories
       </h2>
-      <hr />
+      <hr style={{ width: "90%" }} />
       <div className="homepage-hollystories-container">
         <div className="homepage-advertise-container">Advertisement</div>
         {detail
@@ -96,25 +102,29 @@ function Home() {
             return (
               <div key={index} className="homepage-hollystories-wrapper">
                 <div className="home-hollywood-stories-img">
-                  <Link to={`article/${item.id}`}>
+                  <Link className="none-underline" to={`article/${item.id}`}>
                     <img
-                      alt="image"
+                      className="home-page-bolly-images"
+                      alt="logo"
                       src={item.image}
-                      style={{ width: 200, height: 250 }}
                     />
                   </Link>
                 </div>
                 <div className="home-hollywood-stories-desc">
-                  <h2>{item.name}</h2>
-                  <p>{item.IMDb}</p>
-                  <p>{item.desc}</p>
+                  <Link className="none-underline" to={`article/${item.id}`}>
+                    {" "}
+                    <h2 className="holly-movie-headings">{item.name}</h2>
+                    <p>{item.IMDb}</p>
+                    <p>{item.desc}</p>
+                  </Link>
                 </div>
               </div>
             );
           })}
       </div>
+      <hr className="below-holly-hr" />
       <div className="homepage-toppost-container">
-        <h2>Top Post</h2>
+        <h2 className="toppost-text">Top Post</h2>
         {detail
           .filter((i) => i.category === "Technology" && i.id === 19)
           .map((item, index) => {
@@ -122,15 +132,18 @@ function Home() {
               <div className="homepage-toppost-mainpost">
                 <Link to={`article/${item.id}`}>
                   <img
-                    alt="image"
+                    className="homepage-toppost-main-image"
+                    alt="logo"
                     src={item.image}
-                    style={{ width: 450, height: 266 }}
                   />
                 </Link>
                 <div className="txt-adjust">
-                  <h2>{item.name}</h2>
-                  <p>{item.desc}</p>
+                  <Link className="none-underline" to={`article/${item.id}`}>
+                    <h2 className="toppost-headings">{item.name}</h2>
+                    <p className="toppost-desc">{item.desc}</p>
+                  </Link>
                 </div>
+                <hr style={{ marginTop: 15, width: "90%" }} />
               </div>
             );
           })}
@@ -143,19 +156,58 @@ function Home() {
                 <div className="homepage-toppost-smallpost">
                   <Link to={`article/${item.id}`}>
                     <img
-                      alt="image"
+                      alt="logo"
                       src={item.image}
                       style={{ width: 101, height: 104 }}
                     />
                   </Link>
                   <div className="homepage-toppost-smallpost-info">
-                    <h2>{item.name}</h2>
-                    <p>{item.desc}</p>
+                    <Link className="none-underline" to={`article/${item.id}`}>
+                      <h2 className="headings">{item.name}</h2>
+                      <p>{item.desc}</p>
+                    </Link>
                   </div>
                 </div>
               );
             })}
         </div>
+      </div>
+      <div className="homepage-big-img-besidetoppost">
+        {detail
+          .filter((i) => i.category === "Gaming" && i.id === 2)
+          .map((item, index) => {
+            return (
+              <>
+                <Link to={`article/${item.id}`}>
+                  <img
+                    className="homepage-big-img-besidetoppost-img"
+                    src={item.image}
+                    alt="logo"
+                  />
+                </Link>
+              </>
+            );
+          })}
+      </div>
+
+      <h2 className="global-news-heading">
+        <span className="home-page-headings-underline">Latest</span> Global News
+      </h2>
+      <hr className="news-hr" />
+
+      <div className="homepage-news-container">
+        {detail
+          .filter((i) => i.category === "News")
+          .map((item, index) => {
+            return (
+              <div className="homepage-news-wrapper">
+                <div className="news">
+                  <h3 className="news-bottom-border">{item.heading}</h3>
+                  <p className="news-desc">{item.desc}</p>
+                </div>
+              </div>
+            );
+          })}
       </div>
     </>
   );

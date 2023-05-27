@@ -42,3 +42,23 @@ border-width: 5px;
 
 
 }
+@media only screen and (min-width:250px)and (max-width:750px){
+    .the{
+        font-size: 9px;
+        width: 17px;
+        height: 11px;
+        position: relative;
+        top: -10px;
+        left: -150px;
+    }
+    .siren{
+        font-size: 24px;
+        width: 64px;
+        height: 29px;
+        position: relative;
+        top: -25px;
+        left: -150px;
+        border: 0px ;
+    }
+   
+}

@@ -70,7 +70,7 @@ function Store(props) {
       IMDb: "6.4/10",
       desc: "An Indian spy takes on the leader of a group of mercenaries who have nefarious plans to target his homeland.",
       details:
-        "2019 article 370 is withdrawn by Indian government in Jammu Kashmir.Pakistani General Qadir along with a terrorist Jim decides to plan a big attack on India.In present times Pathaan a RAW agent is traced in Africa who was missing since years his senior officer Nandini comes across suspicious activity and decides to trace Pathaan Back to the past Pathaan had started the JOCR (Joint Operation and Covert Research) which recruited soldiers with disability and trauma and was headed by Nandini. Their first mission is to stop Jim from kidnapping the Indian president in Dubai but Jim has other plans and kidnaps a scientist, Dr Sahani. Pathaan learns that Jim was a former RAW agent who was disowned by the country and now wants to revenge his humiliation after loosing his family. Pathaan traces Dr Rubina Mohsin in Spain who can lead him to Jim. She turns out to be his mole but Rubina saves Pathaan and revels her true identify of being an ISI agent. Rubina discloses to Pathaan that Jim is behind Rakhtbheej which can cause destruction and is in Russia and to stop Jim they have to team up. Pathaan and Rubina get hold of Rakhtbheej but Rubina deceives Pathaan and leaves him to die at the mercy of Russian government.",
+        "2019 article 370 is withdrawn by Indian government in Jammu Kashmir.Pakistani General Qadir along with a terrorist Jim decides to plan a big attack on India.In present times Pathaan a RAW agent is traced in Africa who was missing since years his senior officer Nandini comes across suspicious activity and decides to trace Pathaan Back to the past Pathaan had started the JOCR (Joint Operation and Covert Research) which recruited soldiers with disability and trauma and was headed by Nandini. ",
       release: "25 January 2023",
       image:
         "https://m.media-amazon.com/images/M/MV5BM2QzM2JiNTMtYjU4Ny00MDZkLTk3MmUtYTRjMzVkZGJlNmYyXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_FMjpg_UX1000_.jpg",
@@ -217,6 +217,25 @@ function Store(props) {
         "As the hype around AI has accelerated, vendors have been scrambling to promote how their products and services use AI. Often what they refer to as AI is simply one component of AI, such as machine learning. AI requires a foundation of specialized hardware and software for writing and training machine learning algorithms",
       image:
         "https://www.simplilearn.com/ice9/free_resources_article_thumb/Advantages_and_Disadvantages_of_artificial_intelligence.jpg",
+    },
+    {
+      category: "News",
+      id: 20,
+      heading:
+        "Russia signs deal to deploy tactical nuclear weapons in Belarus",
+      desc: "Russia and Belarus signed a deal on Thursday to formalize the deployment of Russian tactical nuclear missiles on Belarusian territory, a step Moscow said was driven by rising tensions with the West.",
+    },
+    {
+      category: "News",
+      id: 21,
+      heading: "Ukraine set to get F-16 fighter jets",
+      desc: "Ukraine has repeatedly asked its allies for F-16 fighter jets to help combat Russia’s ongoing invasion. The issue has returned to the fore recently",
+    },
+    {
+      category: "News",
+      id: 22,
+      heading: "B.C. premier to skip China during 2-week Asia trade mission",
+      desc: "British Columbia Premier David Eby is heading to Asia on a trade mission that makes stops in Japan, Korea, Singapore and Vietnam,But the premiers tour itinerary, released by his office on the day of his departure, does not include China",
     },
   ]);
   return (

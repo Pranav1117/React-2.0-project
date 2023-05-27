@@ -47,3 +47,46 @@ text-align: center;
 .article-bottom-date{
     font-size: 17px;
 }
+
+
+@media only screen  and (min-width:250px) and (max-width:750px){
+    .article-above-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vmax;
+    }
+    
+    .article-heading{
+        font-size:21px
+    }
+    .aricel-main-image{
+        width: 302px;
+        height: 166px;
+    }
+    .article-main-para{
+        font-size:18px;
+        width: 300px;
+        height: 369px;
+    }
+    .more{
+        font-size:22px;
+    }
+    .article-lower-conatiner{
+        width: 250px;
+    }
+    .article-lower-wrapper{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+    h5{
+        width: 100px;
+        margin-left: 200px;
+    }
+    .article-bottom-name{
+        width: 100px;
+    }
+}

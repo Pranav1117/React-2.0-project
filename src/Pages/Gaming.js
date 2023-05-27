@@ -21,7 +21,7 @@ function Gaming() {
                   <div className="left-section-avatar">
                     <Link to={`/article/${i.id}`}>
                       <img
-                        alt="image"
+                        alt="logo"
                         src={i.image}
                         style={{ width: 250, height: 200, borderRadius: 10 }}
                       ></img>
@@ -48,7 +48,7 @@ function Gaming() {
                   <div className="right-section-avatar">
                     <Link to={`/article/${i.id}`}>
                       <img
-                        alt="image"
+                        alt="logo"
                         src={i.image}
                         style={{
                           width: 200,

@@ -32,7 +32,7 @@ const Article = () => {
                 <div className="article-above-container" key={index}>
                   <h2 className="article-heading">{i.name}</h2>
                   <img
-                    alt="image"
+                    alt="logo"
                     className="article-main-image"
                     src={i.image}
                     style={{ width: 300 }}
@@ -61,7 +61,7 @@ const Article = () => {
                       to={`/article/${i.id}`}
                     >
                       <img
-                        alt="image"
+                        alt="logo"
                         className="article-bottom-images article-bottom "
                         src={i.image}
                         style={{ width: 200 }}

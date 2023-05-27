@@ -32,3 +32,18 @@ text-decoration: none;
     height: 0.2vh;
     background-color: #AC3B61;
 }
+.menu-icon{display: none;}
+
+@media  only screen and (min-width:250px) and (max-width:750px){
+.navbar-container{
+  display: none;
+}
+.menu-icon{
+  display: inline;
+  width: 25px;
+  position: relative;
+  left: 125px;
+  color: brown;
+
+}
+}
