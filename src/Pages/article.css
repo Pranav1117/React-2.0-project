@@ -12,7 +12,36 @@
 color: rgb(122, 38, 38);
 text-align: center;
 }
-
+.articlers-info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.articlers-info{
+    text-align:start ;
+}
+.articlers-name{
+    font-size: 18px;
+    color: black;
+}
+.articlers-postdate{
+    font-size: 14px;
+    color: gray;
+}
+.avatar{
+    width: 103px;
+    height: 103px;
+}
+.articlers-info{
+    margin-right: 30%;
+}
+.socials-icons-container{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
 .article-main-image{
     display: flex;
     margin: 20px;
@@ -23,6 +52,42 @@ text-align: center;
 .article-main-para{
     font-size:20px;
     color: rgba(140, 24, 24, 0.568);
+}
+.genre-likes-container{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+.claps-txt{
+    margin-left:20px;
+    align-content: center;
+}
+.claps-icon{
+    width: 40px;
+    height: 39px;
+    align-items: center;
+}
+
+.genre-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.genre1{
+    background-color: #00000029;
+    padding: 4px;
+    border-radius: 3px;
+}
+.genre2{
+    background-color: #00000029;
+    padding: 4px;
+    border-radius: 3px;
+}
+.genre3{
+    background-color: #00000029;
+    padding: 4px;
+    border-radius: 3px;
 }
 
 .more{
@@ -55,9 +120,9 @@ text-align: center;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vmax;
-    }
     
+    }
+  
     .article-heading{
         font-size:21px
     }
@@ -70,6 +135,81 @@ text-align: center;
         width: 300px;
         height: 369px;
     }
+
+    
+    .avatar{
+        width:75px ;
+        height: 75px;
+    }
+    .articlers-name{
+        font-size: 16px;
+    }
+    .avatar{
+        position: relative;
+        top: 30px;
+        left: 65px;
+        width: 75px;
+        height: 75px;
+    }
+    .articlers-info{
+        position: relative;
+        top: 30px;
+        left: 95px;
+    }
+    .socials-icons-container{
+        position: relative;
+        bottom: 30px;
+        right: 250px;
+        
+
+    }
+    .twitter-icon{
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+
+    .insta-icon{
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+
+.article-main-para{
+    font-size: 18px;
+}
+
+.genre-likes-container{
+position: relative;
+top: 10px;
+right: 90px;
+width: 30%;
+margin-bottom: 55px;
+margin-top: 30px;
+}
+
+.genre1{
+    font-size: 15px;
+    padding: 2px;
+    width: 35%;
+    height: 50%;
+    margin-right: 10px;
+
+}
+.genre2{
+    font-size: 15px;
+    padding: 2px;
+    width: 35%;
+    height: 50%;
+    margin-right: 10px;
+
+}
+.genre3{
+    font-size: 15px;
+    padding: 2px;
+    width: 85%;
+    height: 50%;
+    margin-right: 10px;
+
+}
     .more{
         font-size:22px;
     }
@@ -80,7 +220,7 @@ text-align: center;
         display: flex;
         flex-direction: row;
         margin-bottom: 20px;
-        width: 250px;
+        width: 432px;
     }
     h5{
         width: 100px;

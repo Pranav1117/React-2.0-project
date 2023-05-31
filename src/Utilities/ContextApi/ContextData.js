@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-
+import "../../icon/Avatar.png";
 export const data = createContext();
 
 function Store(props) {
@@ -14,6 +14,14 @@ function Store(props) {
       release:
         "Resident Evil 4 will release on PC, PS4, PS5, and Xbox Series X/S on March 24.",
       image: "https://images4.alphacoders.com/124/thumbbig-1244847.webp",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
 
     {
@@ -26,6 +34,14 @@ function Store(props) {
       release: "Final Fantasy 14 is available now for PC, PS4, and PS5.",
       image:
         "https://gh.cdn.sewest.net/assets/ident/ffxiv-freetrial/images/common/ogp_FR.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
 
     {
@@ -38,6 +54,14 @@ function Store(props) {
       release:
         "Destiny 2 is available on PC, PS4, PS5, Xbox One, and Xbox Series X/S.",
       image: "https://images4.alphacoders.com/817/817281.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
 
     {
@@ -50,6 +74,14 @@ function Store(props) {
       release: "Sons of the Forest is out in early access on PC.",
       image:
         "https://www.giantbomb.com/a/uploads/original/33/338034/3381991-2584519888-libra.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Bollywood",
@@ -62,6 +94,14 @@ function Store(props) {
       release: "20 May 2022",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4BmT6kZWkieCJ8jZG16HnsTLNFEaMhxVsLbMen2hAxSjUBXp7",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Bollywood",
@@ -74,6 +114,14 @@ function Store(props) {
       release: "25 January 2023",
       image:
         "https://m.media-amazon.com/images/M/MV5BM2QzM2JiNTMtYjU4Ny00MDZkLTk3MmUtYTRjMzVkZGJlNmYyXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_FMjpg_UX1000_.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
 
     {
@@ -87,6 +135,14 @@ function Store(props) {
       release: "25 January 2023",
       image:
         "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/922e6bbb-9e16-46fc-b084-ff0ea6d8b7c2/damdao8-db99b400-e493-4e94-9c0d-4b2b776d7c2b.jpg/v1/fill/w_1024,h_1558,q_75,strp/dangal_movie_poster_by_rahulkadu_damdao8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU1OCIsInBhdGgiOiJcL2ZcLzkyMmU2YmJiLTllMTYtNDZmYy1iMDg0LWZmMGVhNmQ4YjdjMlwvZGFtZGFvOC1kYjk5YjQwMC1lNDkzLTRlOTQtOWMwZC00YjJiNzc2ZDdjMmIuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.cL1hPA1eE_KGtRVeKazlzBexjXTQpTiaqMD3q-xm9bI",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Bollywood",
@@ -99,6 +155,14 @@ function Store(props) {
       release: "25 December 2009",
       image:
         "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJKJ6lGwFMrQR0gDdFAp0KU4kJ5WYhEpB8GcrQtlhrcAQ75QV-",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Hollywood",
@@ -111,6 +175,14 @@ function Store(props) {
       release: "27 May 2022",
       image:
         "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLeDZOOOe39EylZoDSJteMkbX8lqS4JT-SvEZ8W2M6s1DRBZMd",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Hollywood",
@@ -123,6 +195,14 @@ function Store(props) {
       release: "27 April 2018",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmE2vwxy5KaCu7cRuYYdgNdQKddux5OYgGwsPo0kqP_xzLnsDV",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Hollywood",
@@ -135,6 +215,14 @@ function Store(props) {
       release: "2 October 2019",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuTcvL4wc0fbBjm1h5CRiFEZ2TnNKtu8KtoPSxTsj6mkedHeWl",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Hollywood",
@@ -147,6 +235,14 @@ function Store(props) {
       release: "26 December 1973",
       image:
         "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqvU5RQ_ppeJUTwvuoRJZ3I4iBAEFW6vc7BlcQf7mc0qvh3Kue",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Fitness",
@@ -157,6 +253,14 @@ function Store(props) {
         "Pull-ups are certainly one of the most challenging bodyweight exercises, and often represent a bucket-list goal for many fitness enthusiasts. It also happens to be a standard test out for every single branch of the military and for good reason, too. Moreover, putting in the work to learn how to properly do a pull-up and building the upper body and back strength you need to do them is worth it—not only is it satisfying to check the goal off your list, but the benefits of pull-ups make them one of the most efficient and effective strengthening exercises to add to your routine to boost your overall fitness and strengthen and sculpt your body.",
       image:
         "https://manmatters.com/blog/content/images/2021/11/Untitled-design---2021-11-01T125710.356.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Fitness",
@@ -167,6 +271,14 @@ function Store(props) {
         "Deadlifts place a big emphasis on your lower body, including your glutes, quads, and hamstrings, resulting in strong and dense legs. Adding deadlifts to your training plan will take your leg strength to another level.",
       image:
         "https://barbend.com/wp-content/uploads/2021/04/BarBend-Article-Image-760-x-427-93.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Fitness",
@@ -177,6 +289,14 @@ function Store(props) {
         "Jogging or running is a popular form of physical activity. About one in 5 Australians try running (or jogging) at some stage in their life. Running is an appealing exercise because it doesn't cost a lot to take part and you can run at any time that suits you.",
       image:
         "https://content.dhhs.vic.gov.au/sites/default/files/Running_iStock_74642299_1050x600.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Fitness",
@@ -187,6 +307,14 @@ function Store(props) {
         "Before you plunge into stretching, make sure you do it safely and effectively. While you can stretch anytime, anywhere, proper technique is key. Stretching incorrectly can actually do more harm than good.",
       image:
         "https://www.kineticptmd.com/wp-content/uploads/2021/09/The-Health-Benefits-of-Stretching.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Technology",
@@ -197,6 +325,14 @@ function Store(props) {
         "Machine learning is an important component of the growing field of data science. Through the use of statistical methods, algorithms are trained to make classifications or predictions, and to uncover key insights in data mining projects. These insights subsequently drive decision making within applications and businesses, ideally impacting key growth metrics.",
       image:
         "https://www.fsm.ac.in/blog/wp-content/uploads/2022/08/ml-e1610553826718.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Technology",
@@ -207,6 +343,14 @@ function Store(props) {
         "Data science is the study of data to extract meaningful insights for business. It is a multidisciplinary approach that combines principles and practices from the fields of mathematics, statistics, artificial intelligence, and computer engineering to analyze large amounts of data.",
       image:
         "https://thedatascientist.com/wp-content/uploads/2019/06/what-is-data-science.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "Technology",
@@ -217,6 +361,14 @@ function Store(props) {
         "As the hype around AI has accelerated, vendors have been scrambling to promote how their products and services use AI. Often what they refer to as AI is simply one component of AI, such as machine learning. AI requires a foundation of specialized hardware and software for writing and training machine learning algorithms",
       image:
         "https://www.simplilearn.com/ice9/free_resources_article_thumb/Advantages_and_Disadvantages_of_artificial_intelligence.jpg",
+      articleby: "Dmitry Nozhenko",
+      avatar:
+        "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
+      likes: 9.2 + "k claps",
+      postdate: "August " + 21 + " " + 2017,
+      genre1: "horror",
+      genre2: "action",
+      genre3: "sci-fi",
     },
     {
       category: "News",

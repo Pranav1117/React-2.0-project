@@ -24,17 +24,25 @@ function Bollywood() {
                   <div className="left-section-avatar">
                     <Link to={`/article/${i.id}`}>
                       <img
+                        className="pages-topics-images"
                         alt="logo"
                         src={i.image}
-                        style={{ width: 250, height: 200, borderRadius: 10 }}
                       ></img>
                     </Link>
                   </div>
                   <div className="info">
                     <h2 className="left-section-name">{i.name}</h2>
-                    <h3>Release Date :{i.release}</h3>
-                    <h3>IMD'b:{i.IMDb}</h3>
+                    <h3 className="left-section-date">
+                      Release Date :{i.release}
+                    </h3>
+                    <h3 className="left-section-imdb">IMD'b:{i.IMDb}</h3>
                     <p className="left-section-para">{i.desc}</p>
+                    <div className="left-sec-slash-wrapper">
+                      <span className="left-sec-cat">{i.category + " "} /</span>
+                      <span className="left-sec-postdate">
+                        {" " + i.postdate}
+                      </span>
+                    </div>
                   </div>
                 </div>
               );

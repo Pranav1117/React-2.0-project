@@ -22,9 +22,9 @@ function Hollywood() {
                   <div className="left-section-avatar">
                     <Link to={`/article/${i.id}`}>
                       <img
+                        className="pages-topics-images"
                         alt="logo"
                         src={i.image}
-                        style={{ width: 250, height: 200, borderRadius: 10 }}
                       ></img>
                     </Link>
                   </div>
@@ -33,6 +33,12 @@ function Hollywood() {
                     <h4>Release Date :{i.release}</h4>
                     <h4>IMD'b:{i.IMDb}</h4>
                     <p className="left-section-para">{i.desc}</p>
+                    <div className="left-sec-slash-wrapper">
+                      <span className="left-sec-cat">{i.category + " "} /</span>
+                      <span className="left-sec-postdate">
+                        {" " + i.postdate}
+                      </span>
+                    </div>
                   </div>
                 </div>
               );

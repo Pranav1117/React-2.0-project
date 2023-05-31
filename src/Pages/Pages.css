@@ -49,7 +49,10 @@ body{
     border-bottom: 1px solid black;
     margin-bottom: 70px;
 }
-
+.left-section-para{
+    line-height: 20px;
+    margin-bottom: 50px;
+}
 
 .right-section{
     width: 30%;
@@ -65,17 +68,63 @@ body{
     line-height: 170%;
     
 }
-
-
+.pages-topics-images{
+    width:250px ;
+    height:200px ;
+    border-radius:10px ;
+    margin-right: 20px;
+}
+.info{
+    line-height: 40px;
+}
+.left-sec-slash-wrapper{
+    text-align: start;
+    
+}
+.left-sec-cat{
+    color: rgb(44, 44, 44);
+}
+.left-sec-postdate{
+    color: rgb(141, 139, 139);
+    font-size: 13px;
+}
 @media only screen and (min-width:250px )and (max-width:750px){
+.right-section{
+    display: none;
+    
+}
+.advertisement-container{
+    display: none;
+}
+.section-container{
+    width: 90%;
+}
+.pages-topics-images{
+    width:114px ;
+    height: 123px;
+}
 
-    .section-conatiner{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-left: 30px;
-    }
+ .left-section{
+    
+    line-height: 20px;
+    width: 100%;
+ }   
+      
+.left-section-name{
+    font-size: 19px;
+}
+.left-section-para{
+    font-size: 14px;
+}
+.left-section-date{
+    font-size: 14px;
 
+}
+.left-section-imdb{
+    font-size: 14px;
 
-
+}
+.page-titles-right{
+    font-size: 21px;
+}
 }

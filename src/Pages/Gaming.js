@@ -21,9 +21,9 @@ function Gaming() {
                   <div className="left-section-avatar">
                     <Link to={`/article/${i.id}`}>
                       <img
+                        className="pages-topics-images"
                         alt="logo"
                         src={i.image}
-                        style={{ width: 250, height: 200, borderRadius: 10 }}
                       ></img>
                     </Link>
                   </div>
@@ -32,6 +32,12 @@ function Gaming() {
                     <p>{i.release}</p>
                     <p className="left-section-para">{i.desc}</p>
                     {/*<p>Desc :{i.content}</p>*/}
+                    <div className="left-sec-slash-wrapper">
+                      <span className="left-sec-cat">{i.category + " "} /</span>
+                      <span className="left-sec-postdate">
+                        {" " + i.postdate}
+                      </span>
+                    </div>
                   </div>
                 </div>
               );

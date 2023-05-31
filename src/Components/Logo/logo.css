@@ -4,7 +4,9 @@ flex-wrap: wrap;
 flex-direction: row;
 justify-content: center;
 }
-
+.below-logo-hr{
+    display: none;
+}
 .the{
 top: 75px;
 left: 814px;
@@ -60,5 +62,7 @@ border-width: 5px;
         left: -150px;
         border: 0px ;
     }
-   
+   .below-logo-hr{
+    display: block;
+}
 }

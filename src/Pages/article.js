@@ -31,6 +31,39 @@ const Article = () => {
               <>
                 <div className="article-above-container" key={index}>
                   <h2 className="article-heading">{i.name}</h2>
+                  <div className="articlers-info-container">
+                    <img src={i.avatar} className="avatar" alt="logo" />
+                    <div className="articlers-info">
+                      <div className="articlers-name">{i.articleby}</div>
+                      <div className="articlers-postdate">{i.postdate}</div>
+                    </div>
+                    <div className="socials-icons-container">
+                      <img
+                        className="fb-icon"
+                        src="https://png.pngitem.com/pimgs/s/33-336495_pic-of-facebook-icon-white-facebook-vector-png.png"
+                        alt="logo"
+                        style={{ width: 26, height: 26, borderRadius: 10 }}
+                      />
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKpzTy2HGrI-pCt83LgXsh2JYbw4Ldl4laEayERq4mBg&usqp=CAU&ec=48600113"
+                        className="twitter-icon"
+                        alt="logo"
+                        style={{ width: 26, height: 26, borderRadius: 10 }}
+                      />
+                      <img
+                        src="https://thumbs.dreamstime.com/b/basic-rgb-146064713.jpg"
+                        className="insta-icon"
+                        alt="logo"
+                        style={{ width: 26, height: 26, borderRadius: 10 }}
+                      />
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNAfb1NqAwiLlWgaSpwNti50Rpm926fm5wuMbyXye7A&usqp=CAU&ec=48600113"
+                        alt="logo"
+                        className="yt-icon"
+                        style={{ width: 26, height: 26, borderRadius: 10 }}
+                      />
+                    </div>
+                  </div>
                   <img
                     alt="logo"
                     className="article-main-image"
@@ -39,8 +72,22 @@ const Article = () => {
                   />
                   <p className="article-main-para">{i.details}</p>
                   <br />
+                  <div className="genre-likes-container">
+                    <div className="genre-container">
+                      <div className="genre1">{i.genre1}</div>
 
-                  <br />
+                      <div className="genre2">{i.genre2}</div>
+                      <div className="genre3">{i.genre3}</div>
+                    </div>
+                    <div className="likes-container">
+                      <img
+                        className="claps-icon"
+                        src="https://cdn-icons-png.flaticon.com/512/5976/5976435.png"
+                        alt="logo"
+                      />
+                      <span className="claps-txt">{i.likes}</span>
+                    </div>
+                  </div>
                 </div>
               </>
             );
