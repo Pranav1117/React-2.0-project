@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar/NavBar";
 import Logo from "./Logo/Logo";
-import { useState } from "react";
 import "./Logo/logo.css";
 const HeaderCompo = () => {
   return (

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Logo/logo.css";
 import "../../icon/Menu_icon_icon-icons.com_71858.png";
-import NavBar from "../NavBar/NavBar";
 const Logo = () => {
   return (
     <>
