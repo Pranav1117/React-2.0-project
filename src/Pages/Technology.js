@@ -3,6 +3,8 @@ import { useContext } from "react";
 import { data } from "../Utilities/ContextApi/ContextData";
 import HeaderCompo from "../Components/HeaderCompo";
 import { Link } from "react-router-dom";
+import "./Pages.css";
+
 function Technology() {
   const [detail] = useContext(data);
   console.log(detail.filter((item) => item.category === "Technology"));

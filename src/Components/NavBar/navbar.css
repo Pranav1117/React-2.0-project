@@ -36,6 +36,7 @@ text-decoration: none;
 
 @media  only screen and (min-width:250px) and (max-width:750px){
 .navbar-container{
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +47,9 @@ text-decoration: none;
   height: 30%;
   width: 90%;
   background-color: rgb(246, 230, 225);
+}
+.navbar-container:active{
+  visibility: visible;
 }
 .navbar-line{display: none;}
 

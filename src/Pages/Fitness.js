@@ -3,6 +3,7 @@ import { data } from "../Utilities/ContextApi/ContextData";
 import { useContext } from "react";
 import HeaderCompo from "../Components/HeaderCompo";
 import { Link } from "react-router-dom";
+import "./Pages.css";
 function Fitness() {
   const [detail] = useContext(data);
 

@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
       <HeaderCompo />
-
+      <div className="img-text-onhover">Click to Read more</div>
       <div className="homepage-main-images">
         <div className="homepage-main-big-image-container">
           {detail

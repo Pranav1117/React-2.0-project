@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./article.css";
+import Logo from "../Components/Logo/Logo";
 const Article = () => {
   var params = useParams();
   var path = parseInt(params.Id);
@@ -24,6 +25,7 @@ const Article = () => {
   return (
     <>
       <div>
+        <Logo className="article-logo" />
         {detail
           .filter((item) => item.id === path)
           .map((i, index) => {
@@ -68,7 +70,6 @@ const Article = () => {
                     alt="logo"
                     className="article-main-image"
                     src={i.image}
-                    style={{ width: 300 }}
                   />
                   <p className="article-main-para">{i.details}</p>
                   <br />
@@ -109,9 +110,8 @@ const Article = () => {
                     >
                       <img
                         alt="logo"
-                        className="article-bottom-images article-bottom "
+                        className="article-bottom-images"
                         src={i.image}
-                        style={{ width: 200 }}
                       />
                       <h4 className=" article-bottom">{i.name}</h4>
                     </Link>

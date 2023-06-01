@@ -7,6 +7,7 @@ import Hollywood from "./Pages/Hollywood";
 import Store from "./Utilities/ContextApi/ContextData";
 import RouteCompo from "../src/Utilities/Routes/RouteCompo";
 import "./global.css";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
           <Fitness />
           <Gaming />
         </RouteCompo>
+        <Footer />
       </Store>
     </div>
   );
