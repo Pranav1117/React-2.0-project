@@ -4,6 +4,7 @@ flex-wrap: wrap;
 flex-direction: row;
 justify-content: center;
 margin-bottom: 3%;
+
 }
 .below-logo-hr{
     display: none;
@@ -14,7 +15,7 @@ left: 814px;
 width: 39px;
 height: 60px;
 transform: matrix(0, -1, 1, 0, 0, 0);
-margin-top: 20px;
+margin-top: 20px;cursor: pointer;
 
 /* UI Properties */
 text-align: left;
@@ -42,7 +43,7 @@ text-shadow: 5px 5px 6px ;
 border-right: 0.5px #BAB2B5 solid;
 border-bottom: 0.5px #BAB2B5 solid;
 border-width: 5px;
-
+cursor: pointer;
 
 }
 @media only screen and (min-width:250px)and (max-width:750px){
@@ -69,10 +70,10 @@ border-width: 5px;
 }
 .menu-icon{
     position: relative;
-    top: -45px;
+    top: -58px;
     margin-left: 50vmin;
 }
-.menu-icon:hover .navbar{
-    display: block;
+.menu-icon:hover {
+    box-shadow: none;
 }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeaderCompo from "../Components/HeaderCompo";
 import { data } from "../Utilities/ContextApi/ContextData";
 import { useContext } from "react";
@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   const [detail] = useContext(data);
+  const start = (useEffect = () => {});
   return (
     <>
       <HeaderCompo />

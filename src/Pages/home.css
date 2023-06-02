@@ -37,7 +37,10 @@ hr{
     margin-left: 10%;
     border-radius: 10px;
 }
-
+.homepage-main-big-image:hover{
+    transform: none;
+    box-shadow: none;
+}
 .homepage-small-images1{
     width: 400px;
     height: 250px;
@@ -47,7 +50,11 @@ hr{
     border-radius: 10px;
 
 }
-
+.homepage-small-images1:hover{
+   
+    transform: none;
+    box-shadow: none;
+}
 .homepage-small-images2{
     width: 400px;
     height: 250px;
@@ -57,7 +64,11 @@ hr{
     border-radius: 10px;
 
 }
-
+.homepage-small-images2:hover{
+   
+    transform: none;
+    box-shadow: none;
+}
 .homepage-bollystories-container{
     display: flex;
     flex-direction: row;
@@ -78,7 +89,6 @@ hr{
     margin: 15px;
     width: 40%;
     margin-left: 10%;
-
 }
 .home-page-bolly-images{
     width: 200px;

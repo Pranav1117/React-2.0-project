@@ -10,7 +10,7 @@
     background-color: rgb(239, 224, 206);
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 ;
+    box-shadow: 0 3px 32px 0 ;
 }
 
 .article-heading{
@@ -27,6 +27,7 @@ text-align: center;
     background-color: rgb(245, 239, 232);
     padding: 2%;
     border-radius: 20px;
+    
 }
 .articlers-info{
     text-align:start ;
@@ -38,6 +39,11 @@ text-align: center;
 .articlers-postdate{
     font-size: 14px;
     color: gray;
+}
+
+.fb-icon ,.insta-icon ,.twitter-icon, .yt-icon{
+    transition: 0.2s;
+    
 }
 .fb-icon:hover{
     box-shadow: -2px 5px 7px 0px gray;
@@ -60,6 +66,10 @@ text-align: center;
     width: 103px;
     height: 103px;
 }
+.avatar:hover{
+    box-shadow: none;
+    transition: 0.3s;
+}
 .articlers-info{
     margin-right: 30%;
 }
@@ -75,6 +85,10 @@ text-align: center;
    
     width: 677px;
     height: 370px;
+}
+.article-main-image:hover{
+    transform: none;
+    box-shadow: none;
 }
 
 .article-main-para{
@@ -94,8 +108,13 @@ text-align: center;
     width: 40px;
     height: 39px;
     align-items: center;
+    transition: 0.2s;
 }
-
+.claps-icon:hover{
+    transform: scale(1.1);
+    box-shadow: none;
+   
+}
 .genre-container{
     display: flex;
     flex-direction: row;

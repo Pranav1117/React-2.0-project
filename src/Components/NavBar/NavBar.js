@@ -25,6 +25,7 @@ function NavBar() {
           Gaming
         </Link>
       </div>
+
       <div className="navbar-line"></div>
     </>
   );
