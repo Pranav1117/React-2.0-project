@@ -1,13 +1,11 @@
 *{
     margin: 0px;
 }
-html,body{
-    overflow-x: hidden;
-}
+
 .App{
     background-color: #EEE2DC;
     font-family: 'Karla', sans-serif;
-    
+    overflow: hidden;
 }
 
 .advertisement-container{

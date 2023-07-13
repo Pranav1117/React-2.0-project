@@ -124,73 +124,78 @@ function Home() {
           })}
       </div>
       <hr className="below-holly-hr" />
-      <div className="homepage-toppost-container">
-        <h2 className="toppost-text">Top Post</h2>
-        {detail
-          .filter((i) => i.category === "Technology" && i.id === 19)
-          .map((item, index) => {
-            return (
-              <div className="homepage-toppost-mainpost">
-                <Link to={`article/${item.id}`}>
-                  <img
-                    className="homepage-toppost-main-image"
-                    alt="logo"
-                    src={item.image}
-                  />
-                </Link>
-                <div className="txt-adjust">
-                  <Link className="none-underline" to={`article/${item.id}`}>
-                    <h2 className="toppost-headings">{item.name}</h2>
-                    <p className="toppost-desc">{item.desc}</p>
-                  </Link>
-                </div>
-                <hr style={{ marginTop: 15, width: "90%" }} />
-              </div>
-            );
-          })}
 
-        <div className="homepage-toppost-smallpost-container">
+      <div className="toppost-flex">
+        <div className="homepage-big-img-besidetoppost">
           {detail
-            .filter((i) => i.category === "Technology")
+            .filter((i) => i.category === "Gaming" && i.id === 2)
             .map((item, index) => {
               return (
-                <div className="homepage-toppost-smallpost">
+                <>
                   <Link to={`article/${item.id}`}>
                     <img
-                      alt="logo"
+                      className="homepage-big-img-besidetoppost-img"
                       src={item.image}
-                      style={{ width: 101, height: 104 }}
+                      alt="logo"
                     />
                   </Link>
-                  <div className="homepage-toppost-smallpost-info">
-                    <Link className="none-underline" to={`article/${item.id}`}>
-                      <h2 className="headings">{item.name}</h2>
-                      <p>{item.desc}</p>
-                    </Link>
-                  </div>
-                </div>
+                </>
               );
             })}
         </div>
-      </div>
-      <div className="homepage-big-img-besidetoppost">
-        {detail
-          .filter((i) => i.category === "Gaming" && i.id === 2)
-          .map((item, index) => {
-            return (
-              <>
-                <Link to={`article/${item.id}`}>
-                  <img
-                    className="homepage-big-img-besidetoppost-img"
-                    src={item.image}
-                    alt="logo"
-                  />
-                </Link>
-              </>
-            );
-          })}
-      </div>
+        <div className="homepage-toppost-container">
+          <h2 className="toppost-text">Top Post</h2>
+          {detail
+            .filter((i) => i.category === "Technology" && i.id === 19)
+            .map((item, index) => {
+              return (
+                <div className="homepage-toppost-mainpost">
+                  <Link to={`article/${item.id}`}>
+                    <img
+                      className="homepage-toppost-main-image"
+                      alt="logo"
+                      src={item.image}
+                    />
+                  </Link>
+                  <div className="txt-adjust">
+                    <Link className="none-underline" to={`article/${item.id}`}>
+                      <h2 className="toppost-headings">{item.name}</h2>
+                      <p className="toppost-desc">{item.desc}</p>
+                    </Link>
+                  </div>
+                  <hr style={{ marginTop: 15, width: "90%" }} />
+                </div>
+              );
+            })}
 
+          <div className="homepage-toppost-smallpost-container">
+            {detail
+              .filter((i) => i.category === "Technology")
+              .map((item, index) => {
+                return (
+                  <div className="homepage-toppost-smallpost">
+                    <Link to={`article/${item.id}`}>
+                      <img
+                        alt="logo"
+                        src={item.image}
+                        style={{ width: 101, height: 104 }}
+                      />
+                    </Link>
+                    <div className="homepage-toppost-smallpost-info">
+                      <Link
+                        className="none-underline"
+                        to={`article/${item.id}`}
+                      >
+                        <h2 className="headings">{item.name}</h2>
+                        <p>{item.desc}</p>
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+      </div>
       <h2 className="global-news-heading">
         <span className="home-page-headings-underline">Latest</span> Global News
       </h2>
