@@ -51,33 +51,59 @@ function Bollywood() {
 
         <div className="right-section">
           <h2 className="page-titles-left">Top Post</h2>
-          {detail
-            .filter((item) => item.category === "Bollywood")
-            .map((i, index) => {
-              return (
-                <div key={index} className="right-section-info-container">
-                  <div className="right-section-avatar">
-                    <Link to={`/article/${i.id}`}>
-                      <img
-                        alt="logo"
-                        src={i.image}
-                        style={{
-                          width: 200,
+
+          <div className="right-sec-big-post">
+            {detail
+              .filter((item) => item.category === "Bollywood" && item.id === 7)
+              .map((item, index) => {
+                return (
+                  <>
+                    <img
+                      className="right-sec-big-avatar"
+                      src={item.image}
+                      alt="logo"
+                    />
+
+                    <div className="">
+                      <span className="right-sec-big-name">{item.name}</span>
+                      
+                    </div>
+                  </>
+                );
+              })}
+          </div>
+              <hr/>
+
+          <div className="right-sec-small-post">
+            {detail
+              .filter((item) => item.category === "Bollywood")
+              .map((i, index) => {
+                return (
+                  <div key={index} className="right-section-info-container">
+                    <div className="right-section-avatar">
+                      <Link to={`/article/${i.id}`}>
+                        <img
+                          alt="logo"
+                          src={i.image}
+                          className="right-sec-avatar-first"
+                          /*style={{
+                          width: 500,
                           height: 150,
                           borderRadius: 10,
                           marginRight: 40,
-                        }}
-                      ></img>
-                    </Link>
+                        }}*/
+                        ></img>
+                      </Link>
+                    </div>
+                    <div className="right-section-info">
+                      <h3 className="right-section-name"> {i.name}</h3>
+                      <h4>IMDb:{i.IMDb}</h4>
+                      <h4>{i.release}</h4>
+                    </div>
                   </div>
-                  <div className="right-section-info">
-                    <h3 className="right-section-name"> Name :{i.name}</h3>
-                    <h4>IMDb:{i.IMDb}</h4>
-                    <h4>{i.release}</h4>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+          </div>
         </div>
         <div className="advertisement-container">Advertisement</div>
       </div>
