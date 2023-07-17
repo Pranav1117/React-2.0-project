@@ -143,6 +143,7 @@ function Home() {
               );
             })}
         </div>
+
         <div className="homepage-toppost-container">
           <h2 className="toppost-text">Top Post</h2>
           {detail
@@ -196,6 +197,8 @@ function Home() {
           </div>
         </div>
       </div>
+
+      
       <h2 className="global-news-heading">
         <span className="home-page-headings-underline">Latest</span> Global News
       </h2>

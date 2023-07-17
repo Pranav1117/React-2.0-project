@@ -303,6 +303,8 @@ hr{
 .homepage-hollystories-wrapper{
     margin-bottom: 20px;
     width: 320px;
+    display: grid;
+    place-items: center;
 }
 .holly-movie-headings{
 font-size: 19px;
