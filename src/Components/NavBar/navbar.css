@@ -65,7 +65,7 @@ text-decoration: none;
   display: inline;
   width: 25px;
   position: relative;
-  left: 125px;
+  /* left: 125px; */
   color: brown;
 cursor: pointer;
 }

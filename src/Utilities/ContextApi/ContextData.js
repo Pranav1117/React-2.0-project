@@ -13,7 +13,8 @@ function Store(props) {
         "Resident Evil 4 is a remake of the 2005’s eponymous GameCube game, one of the most popular entries in Capcom’s survival horror series. This remake keeps the same story as its predecessor, following the adventures of agent Leon S. Kennedy as he tries to save Ashley Graham, the daughter of the President of the United States who was kidnapped by a strange cult in a remote Spanish village. While the plot remains the same as the 2005 game, the Resident Evil 4 remake brings a share of new features, from improved graphics and a creepier atmosphere to a better gameplay experience with six optional control schemes.",
       release:
         "Resident Evil 4 will release on PC, PS4, PS5, and Xbox Series X/S on March 24.",
-      image: "https://images4.alphacoders.com/124/thumbbig-1244847.webp",
+      image:
+        "https://www.residentevil.com/4/_asset/images/bio4-share-global.png",
       articleby: "Dmitry Nozhenko",
       avatar:
         "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
@@ -174,7 +175,7 @@ function Store(props) {
         "Set 30 years after its predecessor, it follows Maverick's return to the United States Navy Strike Fighter Tactics Instructor program (also known as U.S. Navy-Fighter Weapons School - TOPGUN), where he must confront his past as he trains a group of younger pilots, among them the son of Maverick's deceased best friend Lieutenant Nick Goose Bradshaw, USN",
       release: "27 May 2022",
       image:
-        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLeDZOOOe39EylZoDSJteMkbX8lqS4JT-SvEZ8W2M6s1DRBZMd",
+        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/5099b0bb5c1a20bc2f43fe3a4934c94412c842a595deb5220d70a7ee959aae29._UY500_UX667_RI_TTW_.jpg",
       articleby: "Dmitry Nozhenko",
       avatar:
         "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",

@@ -17,8 +17,15 @@
     width: 200px;
 }
 .none-underline{
-text-decoration: none;
-color: rgb(52, 51, 51);
+    text-decoration: none;
+    color: rgb(52, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin-top: 1rem;
 }
 img{
     transition:0.3s;

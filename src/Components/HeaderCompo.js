@@ -11,6 +11,7 @@ const HeaderCompo = () => {
   return (
     <div>
       <Logo />
+      
       {show && <NavBar />}
       <img
         className="menu-icon"

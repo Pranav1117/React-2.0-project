@@ -82,8 +82,7 @@ text-align: center;
     display: flex;
     margin: 20px;
     align-self: center;
-   
-    width: 677px;
+    width: 80%;
     height: 370px;
 }
 .article-main-image:hover{

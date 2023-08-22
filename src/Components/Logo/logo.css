@@ -71,7 +71,9 @@ cursor: pointer;
 .menu-icon{
     position: relative;
     top: -58px;
-    margin-left: 50vmin;
+    margin-right: 2rem;
+    float: right;
+    /* margin-left: 50vmin; */
 }
 .menu-icon:hover {
     box-shadow: none;

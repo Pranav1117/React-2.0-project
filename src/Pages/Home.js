@@ -164,14 +164,16 @@ function Home() {
                       <p className="toppost-desc">{item.desc}</p>
                     </Link>
                   </div>
-                  <hr style={{ marginTop: 15, width: "90%" }} />
+                  <hr
+                    style={{ marginTop: 15, marginBottom: 15, width: "90%" }}
+                  />
                 </div>
               );
             })}
 
           <div className="homepage-toppost-smallpost-container">
             {detail
-              .filter((i) => i.category === "Technology")
+              .filter((i) => i.id === 17)
               .map((item, index) => {
                 return (
                   <div className="homepage-toppost-smallpost">
@@ -198,7 +200,6 @@ function Home() {
         </div>
       </div>
 
-      
       <h2 className="global-news-heading">
         <span className="home-page-headings-underline">Latest</span> Global News
       </h2>

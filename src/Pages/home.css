@@ -29,7 +29,7 @@ hr{
     margin-left: 5%;
 }
 .homepage-main-big-image{
-    width: 750px;
+    width: 46%;
     height: 580px;
     align-self: center;
     margin-left: 10%;
@@ -148,7 +148,8 @@ margin-top: 10px;
 .homepage-toppost-smallpost-info{
     padding: 10px;
     width: 60%;
-
+    position: relative;
+    bottom: 2rem;
 }
 .txt-adjust{
     width: 50%;
@@ -212,7 +213,7 @@ margin-top: 10px;
 
 
 
-@media only screen and (min-width:250px) and (max-width:750px){
+@media only screen and (min-width:250px) and (max-width:1024px){
     
     
     .App{
@@ -238,21 +239,33 @@ margin-top: 10px;
 .homepage-main-big-image{
     width: 90%;
     height: 200%;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    display: flex;
+    margin-inline: auto;
+    /* justify-content: center; */
 }
 .homepage-small-images{
-    display: flex;
-    flex-direction: column;
-    
-
-}
-.homepage-small-images1{
     width: 90%;
     height: 0%;
+    position: relative;
+    top: 40px;
+    margin-inline: auto;
+    /* left: 15px; */
+    right: 0;
+}
+.homepage-small-images1{
+    width: 98%;
+    height: 0%;
 position: relative;
-top: 40px;
-left: 15px;
+/* top: 40px;
+left: 15px; */
+right: 0;
   
+}
+
+.homepage-hollystories-container{
+    width: 90%;
+    margin-inline:auto ;
 }
 .homepage-small-images2{
     width: 90%;
@@ -278,6 +291,7 @@ left: 15px;
     align-self: center;
     align-items: center;
     align-content: center;
+    margin: 0;
 }
 .homepage-bollystories{
     margin-bottom: 20px;
@@ -297,14 +311,19 @@ hr{
     width:90%;
 }
 .home-page-bolly-images{
-    width: 114px;
-    height: 123px;
+    width: 40%;
+    height: 20vh;
 }
 .homepage-hollystories-wrapper{
     margin-bottom: 20px;
-    width: 320px;
+    width: 80%;
     display: grid;
-    place-items: center;
+    /* place-items: center; */
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+    /* justify-items: end; */
+    margin-inline: auto;
 }
 .holly-movie-headings{
 font-size: 19px;
@@ -313,7 +332,8 @@ font-size: 19px;
     font-size: 14px;
 }
 .below-holly-hr{
-    width: 90%;
+    font-size: 14px;
+    margin-inline: auto;
 }
 
 .homepage-toppost-container{
