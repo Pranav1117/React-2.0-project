@@ -3,7 +3,7 @@ import HeaderCompo from "../Components/HeaderCompo";
 import { data } from "../Utilities/ContextApi/ContextData";
 import { useContext } from "react";
 import "./home.css";
-import "../global.css";
+import "../global1.css";
 import { Link } from "react-router-dom";
 
 function Home() {
