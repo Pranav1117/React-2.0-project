@@ -12,6 +12,7 @@ const HeaderCompo = () => {
   };
 
   const [nav, setNav] = useState(false);
+  console.log(nav)
   const handleNavClick = () => {
     setNav(true);
   };

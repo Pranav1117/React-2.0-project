@@ -69,13 +69,6 @@ text-decoration: none;
   text-align: center;
   
 }
-.menu-icon{
-  display: inline;
-  width: 25px;
-  position: relative;
-  /* left: 125px; */
-  color: brown;
-  cursor: pointer;
-}
+
 }
 

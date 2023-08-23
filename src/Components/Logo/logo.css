@@ -115,6 +115,7 @@ cursor: pointer;
     margin-bottom: 15px;
 }
 .menu-icon{
+    display: block;
     position: relative;
     top: -58px;
     margin-right: 2rem;
