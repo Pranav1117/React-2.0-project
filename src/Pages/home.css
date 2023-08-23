@@ -275,10 +275,11 @@ img:hover .img-text-onhover{
         width: 89%;
     }
 .homepage-main-images{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    /* height: 0; */
 }
 .homepage-main-big-image{
     width: 90%;
@@ -289,13 +290,12 @@ img:hover .img-text-onhover{
     /* justify-content: center; */
 }
 .homepage-small-images{
-    width: 90%;
-    height: 0%;
-    position: relative;
-    top: 40px;
-    margin-inline: auto;
-    /* left: 15px; */
-    right: 0;
+       /* height: 10rem; */
+       margin-inline: auto;
+       position: relative;
+       right: 0;
+       /* top: 40px; */
+       /* width: 90%; */
 }
 .homepage-small-images1{
     width: 98%;
