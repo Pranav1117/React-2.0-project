@@ -290,21 +290,18 @@ img:hover .img-text-onhover{
     /* justify-content: center; */
 }
 .homepage-small-images{
-       /* height: 10rem; */
-       margin-inline: auto;
-       position: relative;
-       right: 0;
-       /* top: 40px; */
-       /* width: 90%; */
+    margin-inline: auto;
+    position: relative;
+    display: contents;
+    right: 0;
 }
 .homepage-small-images1{
-    width: 98%;
-    height: 0%;
-position: relative;
-/* top: 40px;
-left: 15px; */
-right: 0;
-  
+    position: relative;
+    right: 0;
+    width: 90%;
+    /* margin-inline: auto; */
+    align-self: center;
+    height: 26rem;
 }
 
 .homepage-hollystories-container{

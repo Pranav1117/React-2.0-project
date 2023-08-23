@@ -52,7 +52,7 @@ text-decoration: none;
   top: 29px;
   /* left: 20px; */
   z-index: 12;
-  /* height: 30%; */
+  height: 30vh;
   width: 100%;
   background-color: rgb(246, 230, 225);
 }
