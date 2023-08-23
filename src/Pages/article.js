@@ -9,9 +9,9 @@ const Article = () => {
   var params = useParams();
   var path = parseInt(params.Id);
 
-  const location = useLocation();
+  const location1 = useLocation();
 
-  console.log(location);
+  console.log(location1);
   const [detail] = useContext(data);
   var categor;
 
