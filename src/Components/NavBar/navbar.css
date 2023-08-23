@@ -36,7 +36,7 @@ text-decoration: none;
 .mobile{
   display: none;
 }
-@media  only screen and (min-width:250px) and (max-width:750px){
+@media  only screen and (min-width:250px) and (max-width:1024px){
   .a{
     display: none;
   }

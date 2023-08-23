@@ -211,7 +211,7 @@ border-radius: 10px;
 }
 
 
-@media only screen  and (min-width:250px) and (max-width:750px){
+@media only screen  and (min-width:250px) and (max-width:1024px){
     .article-above-container{
         display: flex;
         flex-direction: column;
