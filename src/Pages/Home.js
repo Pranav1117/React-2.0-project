@@ -46,7 +46,7 @@ function Home() {
                 </>
               );
             })}
-          <div>
+          <div className="a">
             {detail
               .filter((item) => item.name === "Artificial Inteligence")
               .map((i, index) => {

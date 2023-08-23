@@ -295,6 +295,12 @@ img:hover .img-text-onhover{
     display: contents;
     right: 0;
 }
+.a{
+    margin-inline: auto;
+    position: relative;
+    display: contents;
+    right: 0;
+}
 .homepage-small-images1{
     position: relative;
     right: 0;
