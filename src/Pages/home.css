@@ -319,7 +319,7 @@ img:hover .img-text-onhover{
     height: 70%;
     position: relative;
     top: 56px;
-    left: 15px;
+    /* left: 15px; */
     margin-bottom: 40px;
 }
 .home-page-headings{
