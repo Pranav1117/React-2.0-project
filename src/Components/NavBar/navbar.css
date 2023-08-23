@@ -75,6 +75,6 @@ text-decoration: none;
   position: relative;
   /* left: 125px; */
   color: brown;
-cursor: pointer;
+  cursor: pointer;
 }
 }
