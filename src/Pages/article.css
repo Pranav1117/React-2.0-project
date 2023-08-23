@@ -321,6 +321,10 @@ margin-top: 30px;
     .more{
         font-size:22px;
     }
+
+    .upper{
+        width: 90%;
+    }
     .article-lower-conatiner{
         width: 90%;
         display: flex;
@@ -336,7 +340,7 @@ margin-top: 30px;
         flex-direction: row;
         margin-bottom: 20px;
         padding: 0px;
-        width: 30%;
+        width: 100%;
        align-items: center;
     }
     .article-bottom-images{

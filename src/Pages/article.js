@@ -102,7 +102,7 @@ const Article = () => {
           .map((i, index) => {
             return (
               <>
-                <div>
+                <div className="upper">
                   <div className="article-lower-wrapper">
                     <Link
                       className="article-bottom-name"
