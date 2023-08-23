@@ -6,7 +6,7 @@ import Technology from "./Pages/Technology";
 import Hollywood from "./Pages/Hollywood";
 import Store from "./Utilities/ContextApi/ContextData";
 import RouteCompo from "../src/Utilities/Routes/RouteCompo";
-import "./global1.css";
+// import "./global1.css";
 import Footer from "./Components/Footer";
 function App() {
   return (
