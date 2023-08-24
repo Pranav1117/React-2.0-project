@@ -18,6 +18,7 @@ const HeaderCompo = () => {
     setNav(true);
     console.log(nav);
   };
+  console.log(handleNavClick)
 
   useEffect(() => {
     const handleOutsideClick = (e) => {
