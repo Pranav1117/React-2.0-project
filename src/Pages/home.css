@@ -258,8 +258,7 @@ img:hover .img-text-onhover{
 
 
 @media only screen and (min-width:250px) and (max-width:1024px){
-    
-    
+   
     .App{
         height: 100%
         
@@ -279,7 +278,9 @@ img:hover .img-text-onhover{
     display: flex;
     flex-direction: column;
     /* margin-left: 10px; */
+    width: 100%;
     /* height: 0; */
+    margin-inline: auto;
 }
 .homepage-main-big-image{
     width: 90%;
@@ -321,6 +322,7 @@ img:hover .img-text-onhover{
     top: 56px;
     /* left: 15px; */
     margin-bottom: 40px;
+    right: 0;
 }
 .home-page-headings{
     font-size: 21px;

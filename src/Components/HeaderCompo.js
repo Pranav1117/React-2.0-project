@@ -12,9 +12,11 @@ const HeaderCompo = () => {
   };
 
   const [nav, setNav] = useState(false);
-  console.log(nav)
+  console.log(nav);
+
   const handleNavClick = () => {
     setNav(true);
+    console.log(nav);
   };
 
   useEffect(() => {
@@ -34,27 +36,33 @@ const HeaderCompo = () => {
   return (
     <div>
       <Logo />
-      <div  className="a">
-        <NavBar />
-      <img
-        className="menu-icon"
-        onClick={handleClick}
-        src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png"
-        alt="logo"
-        />
-        </div>
 
-        <div onClick={handleNavClick} className="mobile">
-        {show && <NavBar />}
-      <img
-        className="menu-icon"
-        onClick={handleClick}
-        src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png"
-        alt="logo"
+      <div className="a">
+        { <NavBar />}
+
+        <img
+          className="menu-icon"
+          onClick={handleClick}
+          src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png"
+          alt="logo"
         />
-        </div>
+      </div>
+
+      <div className="mobile">
+        {show && <NavBar />}
+        <img
+          className="menu-icon mob"
+          onClick={handleClick}
+          src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png"
+          alt="logo"
+        />
+      </div>
     </div>
   );
+
+
+
+
 };
 
 export default HeaderCompo;
