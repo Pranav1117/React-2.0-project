@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 // import NavBar from "./NavBar/NavBar";
 import Logo from "./Logo/Logo";
 import "./Logo/logo.css";
-import { useEffect } from "react";
+
 import NewNav from "./NewNav/NewNav";
 
 const HeaderCompo = () => {
