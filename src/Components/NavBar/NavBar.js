@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import "../Logo/logo.css";
-function NavBar() {
+function NavBar({ closeNav }) {
   // const handleClick = () => {
   //   showFunc(false);
   // };
 
   return (
     <>
-      <div className="a">
+      <div className="a1">
         <div className="navbar-container">
           <Link to="/" className="navbar">
             Home
@@ -33,12 +33,12 @@ function NavBar() {
       </div>
       <div className="navbar-line"></div>
 
-      <div className="mobile">
+      <div className="mobile1">
         <div className="navbar-container">
           <Link to="/" className="navbar">
             Home
           </Link>
-          <Link to="/bollywood" className="navbar">
+          <Link to="/bollywood" className="navbar" onClick={closeNav}>
             Bollywood
           </Link>
           <Link to="/hollywood" className="navbar">
@@ -54,7 +54,7 @@ function NavBar() {
             Gaming
           </Link>
         </div>
-      <div className="navbar-line"></div>
+        <div className="navbar-line"></div>
       </div>
     </>
   );

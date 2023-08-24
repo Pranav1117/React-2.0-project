@@ -58,11 +58,12 @@ function Technology() {
               .map((item, index) => {
                 return (
                   <>
+                  <Link to={`/article/${item.id}`}>
                     <img
                       className="right-sec-big-avatar"
                       src={item.image}
                       alt="logo"
-                    />
+                    /></Link>
 
                     <div className="">
                       <span className="right-sec-big-name">{item.name}</span>

@@ -3,32 +3,40 @@ import NavBar from "./NavBar/NavBar";
 import Logo from "./Logo/Logo";
 import "./Logo/logo.css";
 import { useEffect } from "react";
+import NewNav from "./NewNav/NewNav";
 
 const HeaderCompo = () => {
   const [show, setShow] = useState(true);
 
   const handleClick = (e) => {
     setShow(!show);
+    console.log(show);
   };
 
-  const [nav, setNav] = useState(false);
-  console.log(nav);
+  // const [nav, setNav] = useState(false);
+  // console.log(nav);
 
-  const handleNavClick = () => {
-    setNav(true);
-    console.log(nav);
+  // const handleNavClick = () => {
+  //   setNav(true);
+  //   console.log(nav);
+  // };
+  // console.log(handleNavClick)
+
+  const closeNav = () => {
+    setShow(false);
   };
-  console.log(handleNavClick)
 
   useEffect(() => {
     const handleOutsideClick = (e) => {
-      if (!e.target.closest(".menu-icon") && show) {
+      if (!e.target.closest(".mobile") && show) {
         setShow(false);
       }
     };
+
     if (show) {
       document.addEventListener("click", handleOutsideClick);
     }
+
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
@@ -37,9 +45,9 @@ const HeaderCompo = () => {
   return (
     <div>
       <Logo />
-
-      <div className="a">
-        { <NavBar />}
+<NewNav/>
+      {/* <div className="a">
+        {<NavBar />}
 
         <img
           className="menu-icon"
@@ -50,20 +58,17 @@ const HeaderCompo = () => {
       </div>
 
       <div className="mobile">
-        {show && <NavBar />}
+        {show && <NavBar func={closeNav} />}
         <img
           className="menu-icon mob"
+          id="mob"
           onClick={handleClick}
           src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png"
           alt="logo"
         />
-      </div>
+      </div> */}
     </div>
   );
-
-
-
-
 };
 
 export default HeaderCompo;

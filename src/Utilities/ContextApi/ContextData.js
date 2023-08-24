@@ -343,7 +343,7 @@ function Store(props) {
       details:
         "Data science is the study of data to extract meaningful insights for business. It is a multidisciplinary approach that combines principles and practices from the fields of mathematics, statistics, artificial intelligence, and computer engineering to analyze large amounts of data.",
       image:
-        "https://thedatascientist.com/wp-content/uploads/2019/06/what-is-data-science.jpg",
+        "https://imageio.forbes.com/specials-images/imageserve/615a844b0e678d9d11c5fc26/The-5-Biggest-Data-Science-Trends-In-2022/960x0.jpg?height=399&width=711&fit=bounds",
       articleby: "Dmitry Nozhenko",
       avatar:
         "https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp",
