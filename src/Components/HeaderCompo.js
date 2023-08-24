@@ -1,46 +1,46 @@
 import React, { useState } from "react";
-import NavBar from "./NavBar/NavBar";
+// import NavBar from "./NavBar/NavBar";
 import Logo from "./Logo/Logo";
 import "./Logo/logo.css";
 import { useEffect } from "react";
 import NewNav from "./NewNav/NewNav";
 
 const HeaderCompo = () => {
-  const [show, setShow] = useState(true);
+  // const [show, setShow] = useState(true);
 
-  const handleClick = (e) => {
-    setShow(!show);
-    console.log(show);
-  };
-
-  // const [nav, setNav] = useState(false);
-  // console.log(nav);
-
-  // const handleNavClick = () => {
-  //   setNav(true);
-  //   console.log(nav);
+  // const handleClick = (e) => {
+  //   setShow(!show);
+  //   console.log(show);
   // };
-  // console.log(handleNavClick)
 
-  const closeNav = () => {
-    setShow(false);
-  };
+  // // const [nav, setNav] = useState(false);
+  // // console.log(nav);
 
-  useEffect(() => {
-    const handleOutsideClick = (e) => {
-      if (!e.target.closest(".mobile") && show) {
-        setShow(false);
-      }
-    };
+  // // const handleNavClick = () => {
+  // //   setNav(true);
+  // //   console.log(nav);
+  // // };
+  // // console.log(handleNavClick)
 
-    if (show) {
-      document.addEventListener("click", handleOutsideClick);
-    }
+  // const closeNav = () => {
+  //   setShow(false);
+  // };
 
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
-  }, [show]);
+  // useEffect(() => {
+  //   const handleOutsideClick = (e) => {
+  //     if (!e.target.closest(".mobile") && show) {
+  //       setShow(false);
+  //     }
+  //   };
+
+  //   if (show) {
+  //     document.addEventListener("click", handleOutsideClick);
+  //   }
+
+  //   return () => {
+  //     document.removeEventListener("click", handleOutsideClick);
+  //   };
+  // }, [show]);
 
   return (
     <div>
