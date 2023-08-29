@@ -363,6 +363,15 @@ hr{
     width: 40%;
     height: 20vh;
 }
+
+.home-hollywood-stories-img img{
+    width: 100%;
+}
+
+.toppost-flex{
+    justify-content: center;
+}
+
 .homepage-hollystories-wrapper{
     margin-bottom: 20px;
     width: 80%;
@@ -386,7 +395,7 @@ font-size: 19px;
 }
 
 .homepage-toppost-container{
-    display: absolute;
+    display: none;
     top: 10px;
     left: 25px;
     margin: 1px;
