@@ -502,7 +502,7 @@ margin-top: 30px;
     }
     .article-bottom-images{
         width: 90%;
-        height: 70%;
+        /* height: 70%; */
     }
     .article-bottom-date{
         margin: 10px;

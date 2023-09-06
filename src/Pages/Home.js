@@ -13,8 +13,8 @@ function Home() {
     <>
       <HeaderCompo />
       <div className="img-text-onhover">Click to Read more</div>
-      <div className="homepage-main-images">
-        <div className="homepage-main-big-image-container">
+      <div className="homepage-main-big-image-container">
+        <div className="main-div">
           {detail
             .filter((item) => item.name === "Resident evil")
             .map((i, index) => {
@@ -29,24 +29,27 @@ function Home() {
               );
             })}
         </div>
-        <div className="homepage-small-images">
-          {detail
-            .filter(
-              (item) => item.name === "Top Gun :Maverick",
-              "Artificial Inteligence"
-            )
-            .map((i, index) => {
-              return (
-                <>
-                  <img
-                    alt="logo"
-                    src={i.image}
-                    className="homepage-small-images1"
-                  />
-                </>
-              );
-            })}
-          <div className="a">
+
+        <div className="sub-div">
+          <div className="homepage-small-images">
+            {detail
+              .filter(
+                (item) => item.name === "Top Gun :Maverick",
+                "Artificial Inteligence"
+              )
+              .map((i, index) => {
+                return (
+                  <>
+                    <img
+                      alt="logo"
+                      src={i.image}
+                      // className="homepage-small-images1"
+                    />
+                  </>
+                );
+              })}
+          </div>
+          <div className="homepage-small-images">
             {detail
               .filter((item) => item.name === "Artificial Inteligence")
               .map((i, index) => {
@@ -55,7 +58,7 @@ function Home() {
                     <img
                       alt="logo"
                       src={i.image}
-                      className="homepage-small-images2"
+                      // className="homepage-small-images2"
                     />
                   </>
                 );
@@ -95,33 +98,36 @@ function Home() {
         Stories
       </h2>
       <hr style={{ width: "90%" }} />
+
       <div className="homepage-hollystories-container">
+        <div className="holly-post-wrapper">
+          {detail
+            .filter((i) => i.category === "Hollywood")
+            .map((item, index) => {
+              return (
+                <div key={index} className="homepage-hollystories-wrapper">
+                  <div className="home-hollywood-stories-img">
+                    <Link className="none-underline" to={`article/${item.id}`}>
+                      <img
+                        className="home-page-bolly-images"
+                        alt="logo"
+                        src={item.image}
+                      />
+                    </Link>
+                  </div>
+                  <div className="home-hollywood-stories-desc">
+                    <Link className="none-underline" to={`article/${item.id}`}>
+                      {" "}
+                      <h2 className="holly-movie-headings">{item.name}</h2>
+                      <p>{item.IMDb}</p>
+                      <p>{item.desc}</p>
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+        </div>
         <div className="homepage-advertise-container">Advertisement</div>
-        {detail
-          .filter((i) => i.category === "Hollywood")
-          .map((item, index) => {
-            return (
-              <div key={index} className="homepage-hollystories-wrapper">
-                <div className="home-hollywood-stories-img">
-                  <Link className="none-underline" to={`article/${item.id}`}>
-                    <img
-                      className="home-page-bolly-images"
-                      alt="logo"
-                      src={item.image}
-                    />
-                  </Link>
-                </div>
-                <div className="home-hollywood-stories-desc">
-                  <Link className="none-underline" to={`article/${item.id}`}>
-                    {" "}
-                    <h2 className="holly-movie-headings">{item.name}</h2>
-                    <p>{item.IMDb}</p>
-                    <p>{item.desc}</p>
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
       </div>
       <hr className="below-holly-hr" />
 

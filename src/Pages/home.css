@@ -1,11 +1,32 @@
 
 .homepage-advertise-container{
     border: 2px solid black;
-    width: 450px;
-    height: 700px;
-    position: absolute;
-    top: 1536px;
-    left: 925px;
+    width: 30%;
+    /* height: 90%; */
+    margin: 2rem;
+  
+}
+
+.homepage-main-big-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main-div{
+    width: 40%;
+    height: 100%;
+}
+.sub-div{
+    width: 40%;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sub-div img{
+    border-radius:10px ;
 }
 
 .homepage-main-images{
@@ -29,43 +50,32 @@ hr{
     margin-left: 5%;
 }
 .homepage-main-big-image{
-    width: 46%;
+    width: 100%;
     height: 580px;
     align-self: center;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     border-radius: 10px;
 }
 .homepage-main-big-image:hover{
     transform: none;
     box-shadow: none;
 }
-.homepage-small-images1{
-    width: 400px;
-    height: 250px;
-    position: absolute;
-    top: 10px;
-    right: 130px;
-    border-radius: 10px;
 
-}
-.homepage-small-images1:hover{
+.sub-div img:hover{
    
     transform: none;
     box-shadow: none;
 }
-.homepage-small-images2{
-    width: 400px;
-    height: 250px;
-    position: absolute;
-    bottom: 20px;
-    right: 130px;
-    border-radius: 10px;
-
+.homepage-small-images{
+    height: 46%;
+    
+    
 }
-.homepage-small-images2:hover{
-   
-    transform: none;
-    box-shadow: none;
+
+.homepage-small-images img{
+    width: 100%;
+    height: 270px;
+
 }
 .homepage-bollystories-container{
     display: flex;
@@ -81,12 +91,16 @@ hr{
 }
 .homepage-hollystories-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
-    
-    margin: 15px;
-    width: 40%;
-    margin-left: 10%;
+    justify-content: space-evenly;
+    /* margin: 15px; */
+    width: 100%;
+    /* margin-left: 10%; */
+}
+
+.holly-post-wrapper{
+    width: 50%;
 }
 .home-page-bolly-images{
     width: 200px;
@@ -109,15 +123,13 @@ margin: 20px;
 .toppost-flex{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 .homepage-toppost-container{
     display: flex;
-    width:360px ;
+    width:40% ;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 10px;
-    left: 580px;
+    
 }
 .toppost-text{
     font-size: 30px;
@@ -156,15 +168,16 @@ margin-top: 10px;
 }
 
 .homepage-big-img-besidetoppost{
-    position: relative;
-    width: 500px;
-    top: 14px;
-    left: 40px;
+    /* position: relative; */
+    margin-top: 2rem;
+    width: 40%;
+    /* top: 14px; */
+    /* left: 40px; */
    
 }
 .homepage-big-img-besidetoppost-img{
-    width: 800px;
-    height:630px;
+    width: 100%;
+    height:100%;
 }
 .global-news-heading{
     margin-top: 20px;
@@ -273,6 +286,24 @@ img:hover .img-text-onhover{
     .navbar-line{
         width: 89%;
     }
+
+    .homepage-main-big-image-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .main-div{
+        width: 90%;
+    }
+    .sub-div{
+        width: 90%;
+        align-items: center;
+    }
+
+    .sub-div img{
+        width: 90%;
+    }
+
 .homepage-main-images{
     align-items: center;
     display: flex;
@@ -361,7 +392,7 @@ hr{
 }
 .home-page-bolly-images{
     width: 40%;
-    height: 20vh;
+    height: 20rem;
 }
 
 .home-hollywood-stories-img img{

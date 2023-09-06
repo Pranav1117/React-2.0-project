@@ -32,10 +32,7 @@ function Technology() {
                   </div>
                   <div className="info">
                     <h2 className="left-section-name">{i.name}</h2>
-                    <h3 className="left-section-date">
-                      Release Date :{i.release}
-                    </h3>
-                    <h3 className="left-section-imdb">IMD'b:{i.IMDb}</h3>
+
                     <p className="left-section-para">{i.desc}</p>
                     <div className="left-sec-slash-wrapper">
                       <span className="left-sec-cat">{i.category + " "} /</span>
@@ -54,26 +51,28 @@ function Technology() {
 
           <div className="right-sec-big-post">
             {detail
-              .filter((item) => item.category === "Technology" && item.id === 19)
+              .filter(
+                (item) => item.category === "Technology" && item.id === 19
+              )
               .map((item, index) => {
                 return (
                   <>
-                  <Link to={`/article/${item.id}`}>
-                    <img
-                      className="right-sec-big-avatar"
-                      src={item.image}
-                      alt="logo"
-                    /></Link>
+                    <Link to={`/article/${item.id}`}>
+                      <img
+                        className="right-sec-big-avatar"
+                        src={item.image}
+                        alt="logo"
+                      />
+                    </Link>
 
                     <div className="">
                       <span className="right-sec-big-name">{item.name}</span>
-                      
                     </div>
                   </>
                 );
               })}
           </div>
-              <hr/>
+          <hr />
 
           <div className="right-sec-small-post">
             {detail
@@ -98,7 +97,6 @@ function Technology() {
                     </div>
                     <div className="right-section-info">
                       <h3 className="right-section-name"> {i.name}</h3>
-                     
                     </div>
                   </div>
                 );
